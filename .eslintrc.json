@@ -1,0 +1,23 @@
+{
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    // TypeScript rules (https://typescript-eslint.io/rules)
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.js"],
+      "env": {
+        "commonjs": true
+      },
+      "plugins": ["node"],
+      "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off" // Disable no-var-requires for CommonJS files
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "auth",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "npx ts-node-dev ./bin/www",
+    "debug": "npx cross-env DEBUG='*' node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.6",
+    "debug": "~4.3.6",
+    "express": "~4.19.2",
+    "http-errors": "~2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "~1.10.0",
+    "uuid": "^10.0.0"
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9",
+    "@types/uuid": "^10"
+  }
+}

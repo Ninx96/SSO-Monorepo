@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "name": "sso-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "services/*"
+  ],
+  "devDependencies": {
+    "@types/ejs": "^3",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "2.8.8",
+    "prettier-eslint": "^16.1.2",
+    "prettier-eslint-cli": "^8.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "packageManager": "yarn@4.3.1"
+}
