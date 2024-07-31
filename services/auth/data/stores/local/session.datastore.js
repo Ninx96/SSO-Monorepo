@@ -8,7 +8,7 @@ function getSessionById(sessionId) {
 
 function createUserSession(userId) {
   const idx = db.push(new Session(userId))
-  return db[idx]
+  return db[idx - 1]
 }
 
 module.exports = {
