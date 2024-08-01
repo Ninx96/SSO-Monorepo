@@ -16,11 +16,11 @@ function verifySessionToken(sessionToken) {
   if (!session) throw new Error("invalid session token")
   const user = userDatastore.getUserById(session.userId)
   if (!user) throw new Error("user not found")
-  return createJWT(user)
+  return createJWT({ id: user.id, email: user.email })
 }
 
 function createJWT(payload) {
-  return jwt.sign(payload, config.jwt.secret, config.jwt.expiresIn)
+  return jwt.sign(payload, config.jwt.secret, { expiresIn: config.jwt.expiresIn })
 }
 
 module.exports = {

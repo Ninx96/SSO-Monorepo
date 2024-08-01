@@ -979,12 +979,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "content@workspace:services/content"
   dependencies:
+    "@types/jsonwebtoken": "npm:^9"
+    "@types/uuid": "npm:^10"
     axios: "npm:^1.7.2"
     cookie-parser: "npm:~1.4.6"
     debug: "npm:~4.3.6"
     express: "npm:~4.19.2"
     http-errors: "npm:~2.0.0"
+    jsonwebtoken: "npm:^9.0.2"
     morgan: "npm:~1.10.0"
+    uuid: "npm:^10.0.0"
   languageName: unknown
   linkType: soft
 
